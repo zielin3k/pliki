@@ -1,0 +1,58 @@
+*{
+    font-family: Century Gothic, Verdana;
+}
+
+body{
+    background-color: #F0EAE2;
+}
+
+header,footer{
+    background: url(cegla.jpg);
+    color: white;
+    height: 60px;
+    text-align: center;
+}
+
+nav{
+    background-color: #824555;
+    width: 80%;
+    height: 60px;
+    float: left;
+}
+
+aside{
+    width: 20%;
+    height: 560px;
+    text-align: right;
+    overflow: hidden;
+}
+
+aside>img{
+    width: 100%;
+    height: 100%;
+}
+
+#lewa, #srodek{
+    width: 40%;
+    height: 500px;
+    overflow: auto;
+    float: left;
+}
+
+h2{
+    text-align: center;
+}
+
+a{
+    color: #F0EAE2;
+    padding-left: 100px;
+    font-size: 180%;
+}
+
+a:hover{
+    color: white;
+}
+
+footer{
+    clear: both;
+}
