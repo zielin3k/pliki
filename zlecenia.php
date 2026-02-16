@@ -17,11 +17,22 @@
         </nav>
         <section id="lewa">
             <h2>Dla klientów</h2>
-            <form method="POST">
-                <label for="x">Ilu pracowników potrzebujesz?</label><br>
-                <input type="number" id="x">
+            <form action="zlecenia.php" method="POST">
+                <label for="pracownicy">Ilu pracowników potrzebujesz?</label><br>
+                <input type="number" name="nameee" id="x">
                 <button type="submit">Szukaj firm</button>
             </form>
+
+            <?php
+                $polaczenie = new mysqli("localhost", "root","" ,"remonty");
+
+                if(!empty($_POST["nameee"])){
+                    echo $_POST["nameee"];
+                }
+
+                $sql = "SELECT nazwa_firmy, liczba_pracownikow FROM wykonawcy WHERE liczba_pracownikow >= ".$_POST["nameee"]. ";";
+
+            ?>
             
         </section>
         <section id="srodek">
@@ -55,3 +66,7 @@
     </footer>
 </body>
 </html>
+
+<?php
+$polaczenie->close();
+?>
