@@ -43,6 +43,10 @@ h2{
     text-align: center;
 }
 
+li, ul{
+    text-align: center;
+}
+
 a{
     color: #F0EAE2;
     padding-left: 100px;
